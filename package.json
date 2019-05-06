@@ -1,0 +1,32 @@
+{
+  "name": "woof",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "concurrently \"yarn run start-watch\" \"cd client && yarn start\"",
+    "start-watch": "nodemon index.js",
+    "dev": "concurrently \"yarn run start-watch\" \"cd client && yarn start\""
+  },
+  "dependencies": {
+
+    "axios": "^0.18.0",
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.18.3",
+    "connect-flash": "^0.1.1",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "express-session": "^1.16.1",
+    "jso": "^4.1.1",
+    "mongoose": "^5.5.0",
+    "passport": "^0.4.0",
+    "passport-google-oauth": "^2.0.0",
+    "passport-local": "^1.0.0",
+    "passport-openid": "^0.4.0",
+    "react-materialize": "^3.0.5",
+    "react-window-size": "^1.2.2"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0"
+  }
+}
